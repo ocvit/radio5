@@ -10,7 +10,7 @@ jobs:
   rubocop:
     runs-on: ubuntu-latest
     env:
-      BUNDLE_ONLY:
+      BUNDLE_WITHOUT:
         - debug
         - test
 
