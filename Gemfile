@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-group :base, :rubocop do
+group :base, :rspec, :rubocop do
   gem "rake", "~> 13.0"
 end
 
@@ -12,8 +12,11 @@ group :debug do
   gem "pry"
 end
 
-group :test do
+group :rspec, :test do
   gem "rspec", "~> 3.0"
+end
+
+group :test do
   gem "vcr", "~> 6.2"
   gem "webmock", "~> 3.19", ">= 3.19.1"
   gem "simplecov"
