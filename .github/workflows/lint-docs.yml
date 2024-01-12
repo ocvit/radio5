@@ -10,6 +10,9 @@ jobs:
   rubocop:
     name: "rubocop:md"
     runs-on: ubuntu-latest
+    env:
+      BUNDLE_ONLY: rubocop
+
     steps:
     - uses: actions/checkout@v4
     - uses: ruby/setup-ruby@v1
