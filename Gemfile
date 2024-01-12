@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-group :base do
+group :base, :rubocop do
   gem "rake", "~> 13.0"
 end
 
