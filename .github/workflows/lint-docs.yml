@@ -11,7 +11,9 @@ jobs:
     name: "rubocop:md"
     runs-on: ubuntu-latest
     env:
-      BUNDLE_ONLY: rubocop
+      BUNDLE_WITHOUT:
+        - debug
+        - test
 
     steps:
     - uses: actions/checkout@v4

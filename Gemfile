@@ -4,14 +4,21 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "pry"
+group :base do
+  gem "rake", "~> 13.0"
+end
 
-gem "rake", "~> 13.0"
-gem "rspec", "~> 3.0"
-gem "vcr", "~> 6.2"
-gem 'webmock', '~> 3.19', '>= 3.19.1'
-gem "simplecov"
-gem "simplecov-lcov"
+group :debug do
+  gem "pry"
+end
+
+group :test do
+  gem "rspec", "~> 3.0"
+  gem "vcr", "~> 6.2"
+  gem "webmock", "~> 3.19", ">= 3.19.1"
+  gem "simplecov"
+  gem "simplecov-lcov"
+end
 
 group :rubocop do
   gem "standard", "~> 1.0"

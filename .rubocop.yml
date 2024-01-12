@@ -11,7 +11,6 @@ AllCops:
   Exclude:
     - 'bin/*'
     - 'tmp/**/*'
-    - 'Gemfile'
   DisplayCopNames: true
   SuggestExtensions: false
   NewCops: disable
